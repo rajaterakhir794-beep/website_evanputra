@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Profil dan Form</title>
+    <link rel="stylesheet" href="evan.css">
+</head>
+<body>
+
+    <header>
+        <h1>Website Profil Saya</h1>
+    </header>
+
+    <nav>
+        <a href="#profil">Menu 1 - Profil</a>
+        <a href="#projek">Menu 2 - Projek Saya</a> <a href="#form">Menu 3 - Form Lengkap</a>
+    </nav>
+
+    <section id="profil" class="profil">
+        <h2>Profil Saya</h2>
+        <img src="c:\Users\Hype AMD\Downloads\foto_png.png" alt="Foto Profil">
+        <p><b>Nama:</b> Evan Putra Pratama</p>
+        <p><b>Kelas:</b> X PPLG 1</p>
+        <p><b>Sekolah:</b> SMK Negeri 1 Purbalingga</p>
+        <p><b>Hobi:</b> Bermain Bola & Gaming</p>
+        <p><b>Cita-cita:</b> Menjadi Atlet Profesional</p>
+        <p>
+            Halo, saya adalah siswa dari SMK Negeri 1 Purbalingga yang saat ini berada di jurusan PPLG (Pengembangan Perangkat Lunak dan Gim). 
+            Saya senang belajar tentang komputer, pemrograman, dan teknologi. Selain fokus di dunia digital, saya memiliki hobi gaming 
+            untuk hiburan dan menambah wawasan. Saya juga sangat gemar bermain sepak bola karena olahraga ini menawarkan kombinasi unik 
+            antara kerja sama tim, menyegarkan pikiran, dan melatih fisik. Di masa depan, saya bercita-cita menjadi seorang atlet profesional.
+        </p>
+    </section>
+
+    <section id="projek" class="projek-container">
+        <h2>Projek Saya</h2>
+        <div class="projek-grid">
+            
+            <div class="projek-item">
+                <h3>1. Website Wisata</h3>
+                <p>Sebuah website yang menyajikan informasi destinasi wisata menarik, lengkap dengan panduan rute, fasilitas, dan keindahan alamnya.</p>
+                </div>
+
+            <div class="projek-item">
+                <h3>2. Game Scratch</h3>
+                <p>Game interaktif dan seru yang dibuat menggunakan platform Scratch untuk mengasah logika pemrograman dasar dan kreativitas *gameplay*.</p>
+            </div>
+
+            <div class="projek-item">
+                <h3>3. Web Menghitung Bangun Datar</h3>
+                <p>Aplikasi berbasis web yang berfungsi untuk menghitung luas dan keliling berbagai bangun datar secara cepat dan akurat.</p>
+            </div>
+
+            <div class="projek-item">
+                <h3>4. Desain Logo</h3>
+                <p>Koleksi karya desain logo kreatif dan modern yang dibuat menggunakan perangkat lunak desain untuk kebutuhan identitas visual/branding.</p>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="form">
+        <h2>Form Data Diri</h2>
+        <form id="mainForm">
+            <table>
+                <tr>
+                    <td>Nama Lengkap</td>
+                    <td><input type="text" id="inputNama" required></td>
+                </tr>
+                <tr>
+                    <td>Alamat</td>
+                    <td><textarea id="inputAlamat" required></textarea></td>
+                </tr>
+                <tr>
+                    <td>Tempat Lahir</td>
+                    <td><input type="text" id="inputTempat" required></td>
+                </tr>
+                <tr>
+                    <td>Tanggal Lahir</td>
+                    <td><input type="date" id="inputTanggal" required></td>
+                </tr>
+                <tr>
+                    <td>Nomor HP</td>
+                    <td><input type="tel" id="inputHP" required></td>
+                </tr>
+                <tr>
+                    <td>Email</td>
+                    <td><input type="email" id="inputEmail" required></td>
+                </tr>
+                <tr>
+                    <td>Password</td>
+                    <td><input type="password" id="inputPassword" required></td>
+                </tr>
+                <tr>
+                    <td>Jenis Kelamin</td>
+                    <td>
+                        <input type="radio" name="jk" value="Laki-laki" required> Laki-laki
+                        <input type="radio" name="jk" value="Perempuan"> Perempuan
+                    </td>
+                </tr>
+                <tr>
+                    <td>Agama</td>
+                    <td>
+                        <select id="inputAgama">
+                            <option value="Islam">Islam</option>
+                            <option value="Kristen">Kristen</option>
+                            <option value="Katolik">Katolik</option>
+                            <option value="Hindu">Hindu</option>
+                            <option value="Buddha">Buddha</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Hobi</td>
+                    <td>
+                        <input type="checkbox" name="hobi" value="Membaca"> Membaca
+                        <input type="checkbox" name="hobi" value="Olahraga"> Olahraga
+                        <input type="checkbox" name="hobi" value="Gaming"> Gaming
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <button type="submit">Kirim</button>
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </section>
+
+    <section id="hasilData">
+        <h2>Data Yang Dikirim</h2>
+        <div id="output">
+            <p>Belum ada data yang dikirim.</p>
+        </div>
+    </section>
+
+    <script src="evan.js"></script>
+</body>
+</html>
